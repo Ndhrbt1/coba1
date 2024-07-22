@@ -12,8 +12,13 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
+<<<<<<< HEAD
           username: ${{ vars.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+=======
+          username: ndhrbt1
+          password: 260704always
+>>>>>>> 7442008 (chore: set up the workflows for branch main)
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Build and push
@@ -21,4 +26,8 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
+<<<<<<< HEAD
           tags: ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+=======
+          tags: ndhrbt1/coba-server:latest
+>>>>>>> 7442008 (chore: set up the workflows for branch main)
