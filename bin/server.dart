@@ -10,7 +10,7 @@ final _router = Router()
   ..get('/echo/<message>', _echoHandler);
 
 Response _rootHandler(Request req) {
-  return Response.ok('wkwkkwkwk\n');
+  return Response.ok('ini indah qa\n');
 }
 
 Response _echoHandler(Request request) {
