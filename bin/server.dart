@@ -10,7 +10,9 @@ final _router = Router()
   ..get('/echo/<message>', _echoHandler);
 
 Response _rootHandler(Request req) {
-  return Response.ok('ini indah qa\n');
+  final link = req.requestedUri.origin;
+  // return Response.ok('Hello, my name is Annisa!\n$link')
+  return Response.ok('Halo indah disini\n$link');
 }
 
 Response _echoHandler(Request request) {
